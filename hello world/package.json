@@ -8,9 +8,9 @@
   "main": "hello.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node hello.js"
+    "start": "node --watch express-server.js"
   },
   "dependencies": {
-    "i": "^0.3.7"
+    "express": "^5.2.1"
   }
 }
