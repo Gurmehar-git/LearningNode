@@ -1,12 +1,15 @@
 const express=require('express');
 const app=express();
+app.get("/students",(req,res)=>{
+    res.send(`heyyyyyy`);
 
-app.get("/students/:id",((req,res)=>{
+});
+
+console.log("hello world");
+
+app.get("/students/:id",(req,res)=>{
     const student_id=req.params.id;
     res.send(`student id is ${student_id}`);
 
-}))
-app.listen(3000,()=>{
-    console.log("server is running on port 3000");
-}
-);
+});
+app.listen(3000)
